@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoguiPh</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/76b656f449.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2> Yogui <span>Fotografias</span></h2>
+                </div>
+               <ul class="menu">
+                <li><a class="active" href="#quien-soy"> <b>¿Quién Soy?</b> </a></li>
+                <li><a href="#Porfolio"> <b>Porfolio</b></a></li>
+                <li><a href="#Services"><b>Servicios</b> </a></li>
+                <li><a href="#"><b>Contacto</b> </a></li>
+               </ul>
+                </ul>
+            </nav>
+        </header>
+<main class="main">
+    <div class="info-content">
+        <h1> <b> Yogui <span>Fotografias </b> </span></h1>
+        <p>
+            Capturando momentos, creando recuerdos inolvidables...
+        </p>
+    
+    </div>
+    <img  id="logo" src="./imgenes/logo.png" alt="YoguiPh Fotografias">
+
+</main>
+    </div>
+  <!-- seccion de quien soy-->
+    <div id="quien-soy" class="about">
+        <img id="axel" src="./imgenes/retratoaxelc.JPG" alt="Axel cabrera, yogui Fotografias">
+
+    
+    <div  class="about-info">
+        <h2>¿Quién Soy?</h2>
+        <div class="divider"></div>
+         <p>
+            Soy Axel, un apasionado por la fotografía, para mí la fotografía es el arte de poder capturar momentos especiales, momentos que transmiten emociones y narran historias.
+          </p>
+          <P>
+            El objetivo que tengo es capturar la esencia de ese instante para que, al mirarla en el futuro, puedas revivir la misma emoción que experimentaste en ese momento. 
+         </P>
+         <p>
+            Mi viaje en el mundo de la fotografía empezó a la edad de los 15 años, cuando descubrí la tecnología que hay detrás de una cámara y su poder de contar historias atreves de una imagen.
+         </p>
+         <p>
+            Mi enfoque se centra en inmortalizar los momentos más divertidos, felices, nostálgicos y, en general, todas las emociones que la vida nos brinda a través de la magia de la fotografía.
+         </p>
+         <p>
+            Lo que más disfruto es la fotografía casual, me apasiona la capacidad de capturar la esencia de un momento tal como es. Creo que en la naturalidad de la vida cotidiana encontramos los recuerdos más valiosos…
+         </p>
+         
+     </div>
+    </div>
+
+    <!--Seccion del Portfolio-->
+    <div id="Porfolio" class="Portfolio">
+        <div class="Portfolio-headings">
+            <h2>
+                Portfolio
+            </h2>
+        </div>
+    
+    <div class="gallery">
+      <div class="item">
+        <img src="./imgenes/cielorosa.jpg" alt="YoguiPh Fotografias">
+      </div>
+      <div class="item">
+        <img src="./imgenes/fast-food.jpg" alt="YoguiPh Fotografias">
+      </div>
+      <div class="item">
+        <img src="./imgenes/maris-marco.JPG" alt="YoguiPh Fotografias">
+      </div>
+      <div class="item">
+        <img src="./imgenes/DJjj.JPG" alt="YoguiPh Fotografias">
+      </div>
+      <div class="item">
+        <img src="./imgenes/jardy-chica.JPG" alt="YoguiPh Fotografias">
+      </div>
+      <div class="item">
+        <img src="./imgenes/alees.JPG" alt="YoguiPh Fotografias">
+      </div>
+    </div>
+
+    <div id="Services" class="Services">
+      <div class="Services-headings">
+        <h2>
+          Servicios
+        </h2>
+        
+        </div>
+      </div>
+    </div>
+    <script>
+        // Función para el desplazamiento suave
+        function smoothScroll(targetId) {
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            // Obtén la posición del elemento de destino
+            const targetOffset = targetElement.offsetTop;
+            
+            // Desplazamiento suave con animación
+            window.scrollTo({
+              top: targetOffset,
+              behavior: 'smooth'
+            });
+          }
+        }
+        
+        // Agregar un evento de clic a cada enlace del menú
+        const menuLinks = document.querySelectorAll('.menu a');
+        menuLinks.forEach(link => {
+          link.addEventListener('click', (event) => {
+            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            const targetId = link.getAttribute('href').substring(1); // Eliminar el signo "#" del href
+            smoothScroll(targetId);
+          });
+        });
+
+      
+
+      </script>
+      
+</body>
+</html>
