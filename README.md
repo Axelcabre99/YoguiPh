@@ -41,5 +41,20 @@ A section listing the photography services offered, designed to attract potentia
 
 ## Installation and Usage
 
-1- Clone the repository:
+<b>1- Clone the repository:</b>
+```
+https://github.com/Axelcabre99/YoguiPh.git
+```
+
+<b>2- Open the main file:</b>
+
+Navigate to the `index.html` file and open it directly in your web browser.
+
+<b>3- Edit (Optional):</b>
+
+Customize the content or images by adjusting the HTML and CSS files as needed.
+
+## Author
+
+<b>Axel Cabrera</b> - Photographer and project developer.
 
